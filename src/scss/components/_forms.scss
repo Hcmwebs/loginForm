@@ -2,32 +2,33 @@
 
 /* forms */
 .form {
-  width: 90vw;
+  width: 100%;
   max-width: $fixedWidth;
   background: $white;
-  border-radius: $borderRadius;
+  border-radius: $borderRadius-2;
   box-shadow: $shadow-2;
-  padding: 2rem 2.5rem;
+  padding: 2rem;
   margin: 3rem auto;
 }
 .form-label {
   display: block;
+  margin-left: 1.5rem;
   font-size: $smallText;
-  margin-bottom: 0.5rem;
   text-transform: capitalize;
   letter-spacing: $letterSpacing;
 }
 .form-input,
 .form-textarea {
   width: 100%;
-  padding: 0.375rem 0.75rem;
+  padding: 0.75rem 1.5rem;
   border-radius: $borderRadius;
   background: $backgroundColor;
   border: 1px solid $grey-200;
 }
 
-.form-control {
-  margin-bottom: 1rem;
+.form-group {
+  width: 100%;
+  padding-bottom: 1rem;
 }
 
 .form-textarea {
@@ -41,4 +42,50 @@
   color: $red-dark;
   letter-spacing: $letterSpacing;
   text-transform: capitalize;
+  margin-left: 1.5rem;
+}
+
+.signUp {
+  @include flex(column, center, center);
+  gap: 1.5rem;
+
+  .form-group {
+    @include flex(column, center, flex-start);
+    gap: 0.25rem;
+  }
+
+  .btnFooter {
+    width: 100%;
+    @include flex(column, center, center);
+    gap: 0.5rem;
+
+    .smallText {
+      width: 100%;
+      max-width: $fixedWidth;
+    }
+  }
+}
+
+.signIn {
+  width: 100%;
+  @include flex(column, center, flex-start);
+  gap: 0.5rem;
+
+  strong {
+    width: 100%;
+    display: block;
+  }
+
+  &__links {
+    width: 100%;
+    @include flex(row, center, center);
+    gap: 0.625rem;
+
+    span {
+      width: 73px;
+      height: 60px;
+      background-color: salmon;
+      @include grid(center);
+    }
+  }
 }

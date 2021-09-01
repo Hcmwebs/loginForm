@@ -12,28 +12,43 @@
     <div class="container">
       <div class="card">
         <h1>Join the millions learning for free</h1>
-        <form action="" class="form signIn">
-          <div class="formGroup">
-            <label for="email">Email</label>
-            <input type="text" placeholder="email@address.com" />
+        <form action="" class="form signUp">
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="text"
+              placeholder="email@address.com"
+              class="form-input"
+            />
+            <small class="smallText form-alert">Error message</small>
           </div>
-          <div class="formGroup">
-            <label for="password">Password</label>
-            <input type="password" placeholder="*********" />
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              placeholder="**************"
+              class="form-input"
+            />
+            <small class="smallText form-alert">Error message</small>
           </div>
-          <button class="btn btnPrimary">Sign Up</button>
-          <small class="smallText">
-            By signing up you agree to Terms of Services & Privacy Policy
-          </small>
+          <div class="btnFooter">
+            <button class="btn btnPrimary btn-block" type="submit">
+              Sign Up
+            </button>
+            <small class="smallText">
+              By signing up you agree to Terms of Services & Privacy Policy
+            </small>
+          </div>
+          <div class="signIn">
+            <strong>Or sign up using:</strong>
+            <div class="signIn__links">
+              <span>i</span>
+              <span>g</span>
+              <span>t</span>
+              <span>f</span>
+            </div>
+          </div>
         </form>
-
-        <div class="signIn">
-          <strong>Or sign up using:</strong>
-          <span>i</span>
-          <span>g</span>
-          <span>t</span>
-          <span>f</span>
-        </div>
       </div>
     </div>
     <script src="js/main.js"></script>
