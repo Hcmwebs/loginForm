@@ -3,12 +3,8 @@
 /* forms */
 .form {
   width: 100%;
-  max-width: $fixedWidth;
   background: $white;
-  border-radius: $borderRadius-2;
-  box-shadow: $shadow-2;
   padding: 2rem;
-  margin: 3rem auto;
 }
 .form-label {
   display: block;

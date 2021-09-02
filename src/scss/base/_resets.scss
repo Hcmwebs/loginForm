@@ -1,12 +1,13 @@
 @use '../abstracts' as *;
-@use'./typo' as *;
+@use './typo' as *;
 @use '../components' as *;
 *,
 ::after,
 ::before {
   box-sizing: border-box;
 }
-.container{
-  width: 90%;
-  max-width:$maxWidth;
+.container {
+  width: 100%;
+  max-width: $maxWidth;
+  @include grid(center);
 }
