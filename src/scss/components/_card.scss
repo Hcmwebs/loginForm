@@ -1,0 +1,19 @@
+@use '../abstracts' as  *;
+
+.card {
+  width: 375px;
+  @include flex(column, center, flex-start);
+  box-shadow: $shadow-2;
+  padding: 2rem;
+  border-radius: $borderRadius-2;
+
+  h1 {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+@media (min-width: $tabletScreen) {
+  .card {
+    max-width: $fixedWidth;
+  }
+}
