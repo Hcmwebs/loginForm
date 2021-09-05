@@ -1,15 +1,26 @@
 @use '../abstracts' as  *;
 
 .card {
-  width: 375px;
+  max-width: 87%;
   @include flex(column, center, flex-start);
   box-shadow: $shadow-2;
-  padding: 2rem;
   border-radius: $borderRadius-2;
+  padding: 2rem;
+  background-color: $white;
+  overflow: hidden;
 
   h1 {
     width: 100%;
-    padding: 2rem;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0;
+    padding: 0 2rem;
+  }
+
+  .form {
+    max-width: 100%;
+    padding: 2rem 2.5rem;
   }
 }
 @media (min-width: $tabletScreen) {

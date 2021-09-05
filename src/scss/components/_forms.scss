@@ -2,7 +2,7 @@
 
 /* forms */
 .form {
-  width: 100%;
+  width: 90vw;
   background: $white;
   padding: 2rem;
 }
@@ -39,49 +39,4 @@
   letter-spacing: $letterSpacing;
   text-transform: capitalize;
   margin-left: 1.5rem;
-}
-
-.signUp {
-  @include flex(column, center, center);
-  gap: 1.5rem;
-
-  .form-group {
-    @include flex(column, center, flex-start);
-    gap: 0.25rem;
-  }
-
-  .btnFooter {
-    width: 100%;
-    @include flex(column, center, center);
-    gap: 0.5rem;
-
-    .smallText {
-      width: 100%;
-      max-width: $fixedWidth;
-    }
-  }
-}
-
-.signIn {
-  width: 100%;
-  @include flex(column, center, flex-start);
-  gap: 0.5rem;
-
-  strong {
-    width: 100%;
-    display: block;
-  }
-
-  &__links {
-    width: 100%;
-    @include flex(row, center, center);
-    gap: 0.625rem;
-
-    span {
-      width: 73px;
-      height: 60px;
-      background-color: salmon;
-      @include grid(center);
-    }
-  }
 }
