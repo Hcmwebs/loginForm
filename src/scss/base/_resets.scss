@@ -5,10 +5,15 @@
 ::after,
 ::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 .container {
-  width: 90%;
+  width: $fixedWidth;
   min-height: 100vh;
-  max-width: $maxWidth;
+  max-width: 100%;
   @include grid(center);
+  background-color: #fff;
+  border-radius: $borderRadius-2;
+  overflow: hidden;
 }
