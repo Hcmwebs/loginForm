@@ -52,4 +52,9 @@
       }
     }
   }
+
+  .btnFooter {
+    @include flex(column, center, center);
+    gap: 0.5rem;
+  }
 }
