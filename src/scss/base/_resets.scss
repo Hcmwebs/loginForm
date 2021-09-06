@@ -10,7 +10,6 @@
 }
 .container {
   width: $fixedWidth;
-  min-height: 100vh;
   max-width: 100%;
   @include grid(center);
   background-color: #fff;
