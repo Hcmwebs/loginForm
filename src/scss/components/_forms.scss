@@ -3,40 +3,52 @@
 /* forms */
 .form {
   padding: 2rem 2.5rem;
-}
-.form-label {
-  display: inline-block;
-  margin-left: 1.5rem;
-  font-size: $smallText;
-  text-transform: capitalize;
-  letter-spacing: $letterSpacing;
-}
-.form-input,
-.form-textarea {
-  width: 100%;
-  padding: 0.75rem 1.5rem;
-  border-radius: $borderRadius;
-  background: $backgroundColor;
-  border: 1px solid $grey-200;
-}
 
-.form-group {
-  @include flex(column, center, flex-start);
-  gap: 0.5rem;
-  padding-bottom: 1rem;
-}
+  .form-group {
+    @include flex(column, center, flex-start);
+    gap: 0.5rem;
+    padding-bottom: 1rem;
 
-.form-textarea {
-  height: 7rem;
-}
-::placeholder {
-  font-family: inherit;
-  color: $grey-400;
-}
-.form-alert {
-  color: $red-dark;
-  letter-spacing: $letterSpacing;
-  text-transform: capitalize;
-  margin-left: 1.5rem;
-  visibility:hidden;
+    .form-label {
+      display: inline-block;
+      margin-left: 1.5rem;
+      font-size: $smallText;
+      text-transform: capitalize;
+      letter-spacing: $letterSpacing;
+    }
+    .form-input {
+      width: 100%;
+      padding: 0.75rem 1.5rem;
+      border-radius: $borderRadius;
+      background: $backgroundColor;
+      border: 1px solid $grey-200;
+
+      ::placeholder {
+        font-family: inherit;
+        color: $grey-400;
+      }
+    }
+    .form-alert {
+      color: $red-dark;
+      letter-spacing: $letterSpacing;
+      text-transform: capitalize;
+      margin-left: 1.5rem;
+      visibility: hidden;
+    }
+
+    &.success {
+      .form-input {
+        border-color: aqua;
+      }
+    }
+    &.error {
+      .form-input {
+        border-color: $red-dark;
+      }
+
+      .form-alert {
+        visibility: visible;
+      }
+    }
+  }
 }
