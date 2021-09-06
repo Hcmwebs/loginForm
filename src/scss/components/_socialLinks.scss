@@ -10,7 +10,7 @@
     align-self: start;
   }
 
-  &__links {s
+  &__links {
     @include flex(row, center, center);
     gap: 0.25rem;
 
