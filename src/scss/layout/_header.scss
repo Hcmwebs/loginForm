@@ -1,0 +1,12 @@
+@use '../abstracts/'as *;
+
+.header {
+  padding: 1.25rem 2.5rem;
+
+  h1 {
+    font-size: 26px;
+    line-height: 32px;
+    margin: 0;
+    text-transform: initial;
+  }
+}

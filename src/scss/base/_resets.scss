@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 @use './typo' as *;
 @use '../components' as *;
+@use '../layout' as *;
 *,
 ::after,
 ::before {
@@ -15,15 +16,4 @@
   background-color: #fff;
   border-radius: $borderRadius-2;
   box-shadow: $shadow-4;
-
-  .header {
-    padding: 1.25rem 2.5rem;
-
-    h1 {
-      font-size: 26px;
-      line-height: 32px;
-      margin: 0;
-      text-transform: initial;
-    }
-  }
 }
