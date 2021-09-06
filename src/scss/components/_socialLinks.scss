@@ -1,5 +1,30 @@
 @use '../abstracts' as *;
 .signUp {
-  @include grid(center);
+  width: 100%;
+  @include flex(column, center, center);
   gap: 0.625rem;
+  padding: 0 2.5rem;
+  padding-bottom: 2rem;
+
+  strong {
+    align-self: start;
+  }
+
+  &__links {s
+    @include flex(row, center, center);
+    gap: 0.25rem;
+
+    span {
+      width: 60px;
+      height: 60px;
+      border: 1px solid #000;
+      @include grid(center);
+
+      i {
+        width: 24px;
+        height: 24px;
+        background-color: #fff;
+      }
+    }
+  }
 }
