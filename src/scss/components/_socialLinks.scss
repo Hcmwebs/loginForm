@@ -1,3 +1,5 @@
 @use '../abstracts' as *;
-
-.
+.signUp {
+  @include grid(center);
+  gap: 0.625rem;
+}
