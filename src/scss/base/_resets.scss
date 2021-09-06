@@ -9,10 +9,22 @@
   padding: 0;
 }
 .container {
-  width: $fixedWidth;
-  max-width: 100%;
-  @include grid(center);
+  width: 100%;
+  max-width: 470px;
+  @include flex(column, center, center);
   background-color: #fff;
   border-radius: $borderRadius-2;
-  overflow: hidden;
+  box-shadow: $shadow-4;
+
+  .header {
+    padding: 1.25rem 2.5rem;
+
+    h1 {
+      font-size: 26px;
+      line-height: 32px;
+      margin: 0;
+      text-transform: initial;
+    }
+  }
+  
 }
