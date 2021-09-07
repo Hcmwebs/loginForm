@@ -23,16 +23,16 @@
       border-radius: $borderRadius;
       background: $backgroundColor;
       border: 1px solid $grey-200;
-
-      ::placeholder {
-        font-family: inherit;
-        color: $grey-400;
-      }
     }
+
+    ::placeholder {
+      font-family: inherit;
+      color: $grey-300;
+    }
+
     .form-alert {
       color: $red-dark;
       letter-spacing: $letterSpacing;
-      text-transform: capitalize;
       margin-left: 1.5rem;
       visibility: hidden;
     }
