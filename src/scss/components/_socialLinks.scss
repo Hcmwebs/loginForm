@@ -1,28 +1,24 @@
 @use '../abstracts' as *;
 .signUp {
   width: 100%;
-  @include flex(column, center, center);
+  @include flex(column, center, flex-start);
   gap: 0.625rem;
   padding: 0 2.5rem;
   padding-bottom: 2rem;
 
-  strong {
-    align-self: start;
-  }
-
   &__links {
-    @include flex(row, center, center);
-    gap: 0.25rem;
+    @include grid(center);
+    align-self: center;
+    padding: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
 
     span {
-      width: 60px;
-      height: 60px;
+      padding: 1rem;
       border: 1px solid #000;
       @include grid(center);
 
       i {
-        width: 24px;
-        height: 24px;
         background-color: #fff;
       }
     }
